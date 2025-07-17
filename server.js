@@ -30,7 +30,7 @@ app.post('/contact', async (req, res) => {
 
     const mailOptions = {
       from: `"${name}" <${email}>`,
-      to: '',
+      to: process.env.EMAIL_TO,
       subject: `Pesan dari ${name}`,
       text: `Email: ${email}\n\nPesan:\n${message}`,
     };
