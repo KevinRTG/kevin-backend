@@ -12,7 +12,7 @@ app.use(cors({
 
 app.use(express.json());
 
-app.post('/send', async (req, res) => {
+app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
