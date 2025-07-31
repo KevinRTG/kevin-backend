@@ -7,7 +7,7 @@ const app = express();
 
 // Konfigurasi CORS agar hanya mengizinkan domain frontend kamu
 app.use(cors({
-  origin: 'https://kevinritonga.my.id/',
+  origin: 'https://kevinritonga.my.id',
 }));
 
 app.use(express.json());
